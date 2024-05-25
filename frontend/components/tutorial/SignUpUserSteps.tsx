@@ -1,22 +1,28 @@
 import Link from "next/link";
 import Step from "./Step";
 
-export default function SignUpUserSteps() {
+export default function MainPage() {
   return (
-    <ol className="flex flex-col gap-6">
-      <Step title="Sign up your first user">
-        <p>
-          Head over to the{" "}
+    <div className="flex flex-col items-center justify-center min-h-screen py-2">
+      <h1 className="text-4xl font-bold">Welcome to Our App</h1>
+      <div className="mt-8 flex flex-col gap-6">
+        <Step title="Sign In">
           <Link
             href="/login"
             className="font-bold hover:underline text-foreground/80"
           >
             Login
-          </Link>{" "}
-          page and sign up your first user. It's okay if this is just you for
-          now. Your awesome idea will have plenty of users later!
-        </p>
-      </Step>
-    </ol>
+          </Link>
+        </Step>
+        <Step title="Register">
+          <Link
+            href="/register"
+            className="font-bold hover:underline text-foreground/80"
+          >
+            Register
+          </Link>
+        </Step>
+      </div>
+    </div>
   );
 }
