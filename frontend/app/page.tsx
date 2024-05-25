@@ -1,4 +1,4 @@
-import DeployButton from "../components/DeployButton";
+import DeployButton from "../components/Logo";
 import AuthButton from "../components/AuthButton";
 import { createClient } from "@/utils/supabase/server";
 import ConnectSupabaseSteps from "@/components/tutorial/ConnectSupabaseSteps";
