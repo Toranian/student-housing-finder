@@ -1,0 +1,4 @@
+# assets folder
+/assets/*
+*.csv
+*.json
