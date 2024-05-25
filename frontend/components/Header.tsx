@@ -1,44 +1,24 @@
-import NextLogo from "./NextLogo";
-import SupabaseLogo from "./SupabaseLogo";
-
+'use client'
 export default function Header() {
   return (
-    <div className="flex flex-col gap-16 items-center">
-      <div className="flex gap-8 justify-center items-center">
-        <a
-          href="https://supabase.com/?utm_source=create-next-app&utm_medium=template&utm_term=nextjs"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <SupabaseLogo />
-        </a>
-        <span className="border-l rotate-45 h-6" />
-        <a href="https://nextjs.org/" target="_blank" rel="noreferrer">
-          <NextLogo />
-        </a>
+    <div className="flex flex-col md:flex-row-reverse gap-16 items-center">
+      <div className="flex flex-col gap-2">
+        <h1 className="text-3xl">
+          The easiest way to
+          <br />
+          <i>
+            <span className="bg-green-200">find student housing.</span>
+          </i>
+        </h1>
+        <p>Find your perfect rental, sublet, or roommate.</p>
+        <a href="/login" className="px-3 py-1.5 bg-emerald-300 font-semibold hover:-translate-y-[2px] hover:shadow-md text-emerald-900 max-w-[120px] flex items-center justify-center rounded-lg duration-150 ease-in-out">Get Started</a>
       </div>
-      <h1 className="sr-only">Supabase and Next.js Starter Template</h1>
-      <p className="text-3xl lg:text-4xl !leading-tight mx-auto max-w-xl text-center">
-        The fastest way to build apps with{" "}
-        <a
-          href="https://supabase.com/?utm_source=create-next-app&utm_medium=template&utm_term=nextjs"
-          target="_blank"
-          className="font-bold hover:underline"
-          rel="noreferrer"
-        >
-          Supabase
-        </a>{" "}
-        and{" "}
-        <a
-          href="https://nextjs.org/"
-          target="_blank"
-          className="font-bold hover:underline"
-          rel="noreferrer"
-        >
-          Next.js
-        </a>
-      </p>
-      <div className="w-full p-[1px] bg-gradient-to-r from-transparent via-foreground/10 to-transparent my-8" />
+
+      <img
+        className="rounded-xl shadow-sm max-w-[300px] md:max-w-[400px]"
+        src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.designcafe.com%2Fwp-content%2Fuploads%2F2019%2F11%2F17060449%2FQ4aC8wUjahqVLa2vUA5BgXRrzAJSMzDFlwwZ8QFwAhGlDx4fAgLyCZ7ASBin-V9DxAGxg-0R0ngsCX75Fm5KI53AhRsrNnOVSCBCZ5usrlkXhSlyUp7dGFkRWVC1lvLVLOZNNaUX.jpeg&f=1&nofb=1&ipt=cc4d1c7e74341cfe64f6307ee3869ed5545d8e3ece5c1389d7e3ec5684e5618c&ipo=images"
+        alt=""
+      />
     </div>
   );
 }
