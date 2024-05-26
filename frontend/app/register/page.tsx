@@ -32,7 +32,7 @@ export default function Register({
     }
   
     // Redirect to the new profile page with a message
-    return redirect("/setup-profile?message=Check email to continue sign in process");
+    return redirect("/setup-profile");
   };
 
   return (
