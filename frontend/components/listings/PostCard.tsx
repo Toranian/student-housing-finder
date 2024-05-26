@@ -1,9 +1,12 @@
+import Link from "next/link";
+
 interface PostCard {
   price: number;
   location: string;
   rent_start: string;
   rent_end: string;
   image_url: string;
+  postID: number
 }
 function monthsDifference(dateStr1: string, dateStr2: string): number {
   const date1 = new Date(dateStr1);
@@ -29,13 +32,16 @@ export default function PostCard({
   rent_start,
   rent_end,
   image_url,
+  postID
 }: PostCard) {
 
 	const months = monthsDifference(rent_start, rent_end)
 
   return (
     <div className="flex flex-col">
-      <img src={image_url} className="max-h-[200px] w-full bg-cover rounded-lg" alt="" />
+      <Link href={`/listings/${postID}`}>
+        <img src={image_url} className="max-h-[200px] w-full bg-cover rounded-lg duration-200 hover:scale-[1.04] cursor-pointer ease-in-out" alt="" />
+      </Link>
       <div className="flex row items-center justify-between pt-2">
         <p className="font-semibold font-lg">${price}</p>
         <p className="bg-pink-200 border-solid border-[1px] border-pink-400 px-1 py-0.5 rounded-lg text-pink-600 font-semibold text-sm min-w-[75px] flex justify-center items-center">
