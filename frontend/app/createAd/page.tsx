@@ -84,6 +84,8 @@ const Page = () => {
     } catch (error) {
       console.error("Error inserting data:", error);
     }
+
+    window.location.href = "/success";
   };
   const inputStyle = {
     border: "1px solid black",
