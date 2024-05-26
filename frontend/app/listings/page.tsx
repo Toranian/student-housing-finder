@@ -30,7 +30,11 @@ export default async function ListingsPageServer() {
 
       <h1 className="text-xl md:text-2xl font-semibold">Available Listings</h1>
 
+   <div className="md:w-[75vw]">
+
 	  <ListingsPage posts={posts}/>
+
+   </div>
     </div>
   );
 }
