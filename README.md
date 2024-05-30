@@ -1,4 +1,6 @@
 # Student Housing Finder
+![image](https://github.com/Toranian/student-housing-finder/assets/29820369/3d3953c9-5fc1-43da-becf-f04a9b592298)
+
 
 ## VikeLabs Hackathon 2024
 
